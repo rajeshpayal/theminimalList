@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FireFly</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main_header">
+      <nav><img src="nav.png" /></nav>
+      <div style="display: flex; flex-direction: column; margin-bottom: 100px">
+        <p class="header_text">The choice is yours.</p>
+        <p class="header_text">Because they don’t have one</p>
+        <button class="quick_view">QUICK VIEW</button>
+      </div>
+    </div>
+    <div class="main1">
+      <div class="main">
+        <h4><span>About</span></h4>
+        <div class="img_text">
+          <img src="./Frame.png" />
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <p class="about_text">
+              Our products are crafted exclusively from the dreams and screams
+              of young kids who wanted to show their mastery in their chosen
+              fields, but were directed towards a factory for daily wages. Each
+              cracker bursts brighter than their lost smiles, and can be heard
+              louder than their cries for miles. Buy them, burst them, brag
+              about them.
+            </p>
+            <p class="about_text1">
+              The choice is yours. Because they don’t have one.
+            </p>
+          </div>
+          <img src="./Frame.png" />
+        </div>
+      </div>
+      <h4><span>Out Products</span></h4>
+      <div class="section">
+        <div class="img_container">
+          <img src="./Beej-Patakha.png" />
+          <div class="mini_img_container">
+            <p class="section_text">Raju Rassibomb</p>
+            <div class="section_btn">QUICK VIEW</div>
+          </div>
+        </div>
+        <div class="img_container">
+          <img src="./Beej-Patakha.png" />
+          <div class="mini_img_container">
+            <p class="section_text">Ladiyon ki Rani Chani</p>
+            <div class="section_btn">QUICK VIEW</div>
+          </div>
+        </div>
+      </div>
+      <div class="complete_yellow_line"></div>
+      <!--Modal-->
+
+      <div class="modal hidden">
+        <div class="img_width">
+          <img
+            class="change_image"
+            src="./Beej-Patakh.png"
+            style="max-width: 100%; height: 350px"
+          />
+          <div class="small_img_containers">
+            <img
+              src="./Beej-Patakha.png"
+              width="auto"
+              height="70px"
+              style="padding: 5px; cursor: pointer"
+            />
+            <img
+              src="./Frame.png"
+              width="auto"
+              height="70px"
+              style="padding: 5px; cursor: pointer"
+            />
+            <img
+              src="./Beej-Patakha.png"
+              width="auto"
+              height="70px"
+              style="padding: 5px; cursor: pointer"
+            />
+            <img
+              src="./Beej-Patakha.png"
+              width="auto"
+              height="70px"
+              style="padding: 5px; cursor: pointer"
+            />
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 50%;
+            max-width: 350px;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              justify-items: flex-start;
+              flex-direction: row;
+            "
+          >
+            <h3>Raju Rassibomb</h3>
+            <div class="close_btn">&times;</div>
+          </div>
+          <div class="mrp_container">
+            <p class="mrp">MRP:1000</p>
+            <p class="mrp_desc">Raju’s Dreams/-</p>
+          </div>
+          <div class="product_desc">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="359"
+                height="2"
+                viewBox="0 0 359 2"
+                fill="none"
+              >
+                <path
+                  d="M0 1H359"
+                  stroke="#F27121"
+                  stroke-dasharray="1 6 6 4"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="prod_heading">Product Description:</h3>
+              <p class="prod_desc">
+                This product packs an extra punch, thanks to the literal blood,
+                sweat and tears of a young boy.
+              </p>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="359"
+                height="2"
+                viewBox="0 0 359 2"
+                fill="none"
+              >
+                <path
+                  d="M0 1H359"
+                  stroke="#F27121"
+                  stroke-dasharray="1 6 6 4"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="prod_heading">Product Contents:</h3>
+              <p class="prod_desc">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                >
+                  <path
+                    d="M10.1733 1.23662C9.38555 1.87214 8.7414 2.66738 8.28333 3.56995C7.85222 4.12911 7.45482 4.71348 7.0933 5.31995C6.11955 4.15279 5.08364 3.03896 3.99 1.9833C3.8639 1.84973 3.69644 1.76253 3.51469 1.73586C3.33294 1.70919 3.14748 1.74461 2.98832 1.83633C2.82916 1.92805 2.7056 2.07074 2.63755 2.24136C2.5695 2.41198 2.56092 2.60055 2.61327 2.77663C3.04224 4.09709 3.66337 5.34716 4.45662 6.48662C3.21996 6.48662 1.9833 6.83667 0.81663 6.97667C0.614945 7.01017 0.431714 7.11409 0.29952 7.27005C0.167326 7.42601 0.0947266 7.62387 0.0947266 7.82831C0.0947266 8.03276 0.167326 8.23062 0.29952 8.38658C0.431714 8.54254 0.614945 8.64646 0.81663 8.67996C2.02996 8.67996 3.31333 8.95999 4.57333 9.00666C3.8922 9.78005 3.34774 10.6638 2.96333 11.62C2.89931 11.842 2.91029 12.079 2.99466 12.2942C3.07903 12.5093 3.23205 12.6907 3.42995 12.81C3.64098 12.9307 3.88612 12.9778 4.12686 12.944C4.36761 12.9102 4.59032 12.7974 4.75997 12.6233C5.6233 11.9 6.48665 11.27 7.39665 10.64C8.67403 11.5255 10.0838 12.2028 11.5733 12.6467C12.9267 13.1133 13.51 11.2233 12.4833 10.4767C11.4566 9.73 10.29 8.63323 9.14665 7.74657L8.93666 7.58336C9.61973 6.75942 10.1636 5.82933 10.5467 4.82997C11.0605 3.96842 11.379 3.00469 11.48 2.00666C11.4939 1.84856 11.4627 1.68971 11.3901 1.54858C11.3175 1.40745 11.2064 1.28978 11.0697 1.20921C10.9329 1.12863 10.7762 1.08842 10.6175 1.09328C10.4589 1.09813 10.3049 1.14783 10.1733 1.23662Z"
+                    fill="#F8CA95"
+                  />
+                </svg>
+                10 hand-hurting pieces of rassi bombs
+              </p>
+              <p class="prod_desc">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                >
+                  <path
+                    d="M10.1733 1.23662C9.38555 1.87214 8.7414 2.66738 8.28333 3.56995C7.85222 4.12911 7.45482 4.71348 7.0933 5.31995C6.11955 4.15279 5.08364 3.03896 3.99 1.9833C3.8639 1.84973 3.69644 1.76253 3.51469 1.73586C3.33294 1.70919 3.14748 1.74461 2.98832 1.83633C2.82916 1.92805 2.7056 2.07074 2.63755 2.24136C2.5695 2.41198 2.56092 2.60055 2.61327 2.77663C3.04224 4.09709 3.66337 5.34716 4.45662 6.48662C3.21996 6.48662 1.9833 6.83667 0.81663 6.97667C0.614945 7.01017 0.431714 7.11409 0.29952 7.27005C0.167326 7.42601 0.0947266 7.62387 0.0947266 7.82831C0.0947266 8.03276 0.167326 8.23062 0.29952 8.38658C0.431714 8.54254 0.614945 8.64646 0.81663 8.67996C2.02996 8.67996 3.31333 8.95999 4.57333 9.00666C3.8922 9.78005 3.34774 10.6638 2.96333 11.62C2.89931 11.842 2.91029 12.079 2.99466 12.2942C3.07903 12.5093 3.23205 12.6907 3.42995 12.81C3.64098 12.9307 3.88612 12.9778 4.12686 12.944C4.36761 12.9102 4.59032 12.7974 4.75997 12.6233C5.6233 11.9 6.48665 11.27 7.39665 10.64C8.67403 11.5255 10.0838 12.2028 11.5733 12.6467C12.9267 13.1133 13.51 11.2233 12.4833 10.4767C11.4566 9.73 10.29 8.63323 9.14665 7.74657L8.93666 7.58336C9.61973 6.75942 10.1636 5.82933 10.5467 4.82997C11.0605 3.96842 11.379 3.00469 11.48 2.00666C11.4939 1.84856 11.4627 1.68971 11.3901 1.54858C11.3175 1.40745 11.2064 1.28978 11.0697 1.20921C10.9329 1.12863 10.7762 1.08842 10.6175 1.09328C10.4589 1.09813 10.3049 1.14783 10.1733 1.23662Z"
+                    fill="#F8CA95"
+                  />
+                </svg>
+                Jilled with great pain
+              </p>
+              <p class="prod_desc">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                >
+                  <path
+                    d="M10.1733 1.23662C9.38555 1.87214 8.7414 2.66738 8.28333 3.56995C7.85222 4.12911 7.45482 4.71348 7.0933 5.31995C6.11955 4.15279 5.08364 3.03896 3.99 1.9833C3.8639 1.84973 3.69644 1.76253 3.51469 1.73586C3.33294 1.70919 3.14748 1.74461 2.98832 1.83633C2.82916 1.92805 2.7056 2.07074 2.63755 2.24136C2.5695 2.41198 2.56092 2.60055 2.61327 2.77663C3.04224 4.09709 3.66337 5.34716 4.45662 6.48662C3.21996 6.48662 1.9833 6.83667 0.81663 6.97667C0.614945 7.01017 0.431714 7.11409 0.29952 7.27005C0.167326 7.42601 0.0947266 7.62387 0.0947266 7.82831C0.0947266 8.03276 0.167326 8.23062 0.29952 8.38658C0.431714 8.54254 0.614945 8.64646 0.81663 8.67996C2.02996 8.67996 3.31333 8.95999 4.57333 9.00666C3.8922 9.78005 3.34774 10.6638 2.96333 11.62C2.89931 11.842 2.91029 12.079 2.99466 12.2942C3.07903 12.5093 3.23205 12.6907 3.42995 12.81C3.64098 12.9307 3.88612 12.9778 4.12686 12.944C4.36761 12.9102 4.59032 12.7974 4.75997 12.6233C5.6233 11.9 6.48665 11.27 7.39665 10.64C8.67403 11.5255 10.0838 12.2028 11.5733 12.6467C12.9267 13.1133 13.51 11.2233 12.4833 10.4767C11.4566 9.73 10.29 8.63323 9.14665 7.74657L8.93666 7.58336C9.61973 6.75942 10.1636 5.82933 10.5467 4.82997C11.0605 3.96842 11.379 3.00469 11.48 2.00666C11.4939 1.84856 11.4627 1.68971 11.3901 1.54858C11.3175 1.40745 11.2064 1.28978 11.0697 1.20921C10.9329 1.12863 10.7762 1.08842 10.6175 1.09328C10.4589 1.09813 10.3049 1.14783 10.1733 1.23662Z"
+                    fill="#F8CA95"
+                  />
+                </svg>
+                Raju’s hopes
+              </p>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="359"
+                height="2"
+                viewBox="0 0 359 2"
+                fill="none"
+              >
+                <path
+                  d="M0 1H359"
+                  stroke="#F27121"
+                  stroke-dasharray="1 6 6 4"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="prod_heading">Shipping Time:</h3>
+              <p class="prod_desc">
+                Before Raju understands that his dreams do not matter.
+              </p>
+            </div>
+          </div>
+          <div class="choose_btn">Choose Now</div>
+        </div>
+      </div>
+
+      <!--Modal-->
+      <div class="overlay hidden"></div>
+    </div>
+    <div class="footer_upper_line"></div>
+    <div class="footer">
+      <img src="./Frame6.png" style="margin-left: 20px" />
+      <div class="icons">
+        <p class="footer_text">Follow us on</p>
+        <div>
+          <img src="./001-instagram.png" class="footer_img" />
+          <img src="./002-youtube.png" class="footer_img" />
+          <img src="./003-twitter.png" class="footer_img" />
+          <img src="./004-facebook.png" class="footer_img" />
+          <img src="./005-linkedin.png" class="footer_img" />
+        </div>
+      </div>
+      <img src="./Frame6.png" style="margin-right: 20px" />
+    </div>
+    <div class="footer_upper_line"></div>
+    <script src="code.js"></script>
+  </body>
+</html>
